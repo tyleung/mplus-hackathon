@@ -31,6 +31,7 @@ h3 {
 .mdc-card:hover {
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
     0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.015);
 }
 .mdc-card:hover img {
   transform: scale(1.01);
@@ -51,9 +52,6 @@ h3 {
   outline-color: #dcc8b2;
   outline-width: 3px;
   background-color: #ece1d5;
-}
-.card-text-wrapper:hover {
-  font-size: 1.1em;
 }
 .card-text {
   padding: 10px 15px 10px 15px;
