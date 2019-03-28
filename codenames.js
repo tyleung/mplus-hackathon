@@ -155,7 +155,6 @@ function createCard(id, colour, alt = '') {
 
   let cardTextWrapper = document.createElement('div');
   cardTextWrapper.setAttribute('class', 'card-text-wrapper');
-  //cardAction.setAttribute('tabindex', '0');
 
   let cardText = document.createElement('span');
   cardText.setAttribute('class', 'card-text');

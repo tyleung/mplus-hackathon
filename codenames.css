@@ -35,7 +35,8 @@ h3 {
 .mdc-card:hover img {
   transform: scale(1.01);
 }
-.mdc-card.active img {
+.mdc-card.active img,
+.mdc-card.active .card-text-wrapper {
   display: none;
 }
 .card-text-wrapper {
