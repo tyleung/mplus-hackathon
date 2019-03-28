@@ -148,13 +148,13 @@ function createCard(id, colour, alt = '') {
   let card = document.createElement('div');
   card.setAttribute(
     'class',
-    'mdc-card mdc-elevation-transition card-with-text ' + colour.class
+    'mdc-card mdc-elevation-transition ' + colour.class
   );
   card.setAttribute('tabindex', '0');
   card.addEventListener('click', onCardClicked(colour));
 
-  //let cardAction = document.createElement('div');
-  //cardAction.setAttribute('class', 'mdc-card__primary-action');
+  let cardTextWrapper = document.createElement('div');
+  cardTextWrapper.setAttribute('class', 'card-text-wrapper');
   //cardAction.setAttribute('tabindex', '0');
 
   let cardText = document.createElement('span');
@@ -172,8 +172,8 @@ function createCard(id, colour, alt = '') {
   cardAction.appendChild(img);
   */
 
-  //cardAction.appendChild(cardText);
-  card.appendChild(cardText);
+  cardTextWrapper.appendChild(cardText);
+  card.appendChild(cardTextWrapper);
   return card;
 }
 

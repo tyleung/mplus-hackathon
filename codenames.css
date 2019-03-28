@@ -22,7 +22,6 @@ h3 {
 .mdc-card {
   overflow: hidden;
   min-width: 0;
-  background-color: #ece1d5 !important;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
@@ -39,25 +38,27 @@ h3 {
 .mdc-card.active img {
   display: none;
 }
-.card-with-text {
+.card-text-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 100%;
+  width: 100%;
   outline-style: solid;
   outline-offset: -10px;
   outline-color: #dcc8b2;
   outline-width: 3px;
+  background-color: #ece1d5;
 }
-.card-with-text.active {
-  outline-style: none;
-}
-.card-with-text:hover {
+.card-text-wrapper:hover {
   font-size: 1.1em;
 }
 .card-text {
   padding: 10px 15px 10px 15px;
 }
-.check img {
+.check img,
+.check .card-text-wrapper {
   display: none;
 }
 .check .red,
